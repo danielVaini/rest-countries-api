@@ -6,7 +6,7 @@ let windowWidht = window.innerWidth;
 export const Container = styled.div`
   width: 100%;
   height: 100%;
-
+  
  
   min-height: ${windowHeight};
   
