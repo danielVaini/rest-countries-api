@@ -2,7 +2,7 @@ import React from 'react';
 
 import Navbar from '../../components/Menu/index';
 import Search from '../../components/Search/index';
-
+import Cards from '../../components/Cards/index';
 import { Container } from './styles';
 
 function Layout() {
@@ -11,6 +11,7 @@ function Layout() {
       <Container>
         <Navbar />
         <Search />
+        <Cards />
       </Container>
     </>
   );
