@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { InputContainer,  SearchIcon} from './styles';
-import api from '../../server/api';
+
 
 
 function Search() {
