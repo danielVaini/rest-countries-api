@@ -5,18 +5,18 @@ import api from '../../server/api';
 
 function Cards() {
 
-const [countrys, setCountrys] = useState([])
+const [countries, setCountries] = useState([])
 
 useEffect(() => {
   api.get('/all').then((res) => {
-    setCountrys(res.data);
+    setCountries(res.data);
     console.log(res.data)
   })
 }, [])
 
   return ( 
       <Grid>
-        {countrys.map(item => {
+        {countries.map(item => {
           return (
             <Card key={item.alpha2Code}>
               <img src={item.flag} alt="Flag"/>
