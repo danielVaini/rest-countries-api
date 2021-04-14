@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 let windowHeight = window.innerHeight;
-let windowWidht = window.innerWidth;
+
 
 export const Container = styled.div`
   width: 100%;
