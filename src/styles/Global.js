@@ -14,6 +14,24 @@ export default createGlobalStyle`
     width: 100%;
     height: 100%;
 
-    color: var(--white);
+    font-size: 14px;
+
+    background-color: var(--very-dark-blue);
+  }
+
+
+  :root {
+
+    // Dark mode
+    --dark-blue: hsl(209, 23%, 22%);
+    --very-dark-blue: hsl(207, 26%, 17%);
+
+    // Light mode text
+    --vr-dark-blue-LG: hsl(200, 15%, 8%);
+    --dark-gray-LG: hsl(0, 0%, 52%);
+    // Background lg
+    --vr-lg-grayLG:  hsl(0, 0%, 98%);
+
+    --white-dr-lg-text: hsl(0, 0%, 100%);
   }
 `;
