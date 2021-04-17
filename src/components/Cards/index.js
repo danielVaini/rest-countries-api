@@ -18,7 +18,7 @@ useEffect(() => {
       <Grid>
         {countries.map(item => {
           return (
-            <Card key={item.alpha2Code}>
+            <Card href="/" key={item.alpha2Code}>
               <img src={item.flag} alt="Flag"/>
               <div>
                 <h3>{item.name}</h3>
