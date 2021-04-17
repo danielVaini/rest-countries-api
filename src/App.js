@@ -1,10 +1,10 @@
 import Global from './styles/Global';
-import Layout from './pages/layout';
+import Routes from './routes';
 
 function App() {
   return (
    <>
-     <Layout />
+     <Routes />
 
      <Global />
    </>
