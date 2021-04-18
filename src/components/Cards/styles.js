@@ -18,7 +18,7 @@ export const Grid = styled.div`
 `;
 
 
-export const Card = styled.a`
+export const Card = styled.div`
   
   width: 250px;
   height: 350px;
