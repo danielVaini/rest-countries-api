@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import {Link} from 'react-router-dom';
 
 import { Grid, Card } from './styles';
 import api from '../../server/api';
@@ -18,7 +19,8 @@ useEffect(() => {
       <Grid>
         {countries.map(item => {
           return (
-            <Card href="/" key={item.alpha2Code}>
+            <Link key={item.alpha2Code} to={`/flag/${item.alpha2Code}`} >
+            <Card>
               <img src={item.flag} alt="Flag"/>
               <div>
                 <h3>{item.name}</h3>
@@ -28,6 +30,7 @@ useEffect(() => {
                 <p>Capital: {item.capital}</p>
               </div>
             </Card>
+            </Link>
           )
         })}
       </Grid>
