@@ -38,7 +38,9 @@ function Cards() {
 
             <Link to={`/flag/${item.alpha2Code}`}>
             <Card>
-              <img src={item.flag} alt="Flag"/>
+              <div className="flag">
+                <img src={item.flag} alt="Flag"/>
+              </div>
               <div className="description">
                 <h2>{item.name}</h2>
                 <div className="info">
