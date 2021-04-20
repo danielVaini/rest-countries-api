@@ -6,15 +6,19 @@ export const Navbar = styled.div`
   width: 100%;
   height: 80px;
 
+  padding: 0px 15px;
+
   display: flex;
   align-items: center;
   justify-content: center;
 
-  background-color: var(--dark-blue)
+  background-color: var(--dark-blue);
+  
 `;
 
 export const NavContainer = styled.div`
   width: 1280px;
+  height: 80px;
 
   display: flex;
   align-items: center;
