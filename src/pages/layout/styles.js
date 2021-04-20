@@ -1,15 +1,21 @@
 import styled from 'styled-components';
 
-let windowHeight = window.innerHeight;
-
 
 export const Container = styled.div`
   width: 100%;
   height: 100%;
+
   
+  display: flex;
+  flex-direction: column;
+  align-items: center;
  
-  min-height: ${windowHeight};
-  
+`;
+
+export const LayoutPage = styled.div`
+  width: 100%;
+  max-width: 1280px;
+  height: auto;
 
   display: flex;
   flex-direction: column;
