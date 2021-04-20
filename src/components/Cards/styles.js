@@ -87,6 +87,8 @@ export const Grid = styled.div`
    text-decoration: none;
    width:250px;
  }
+
+ 
   
 `;
 
@@ -104,14 +106,21 @@ export const Card = styled.div`
   border-top-left-radius: 16px; 
   border-top-right-radius: 16px; 
 
-  > img {
-    width: 100%;
-    height: 170px;
-    
-    
-    border-top-left-radius: 16px; 
-    border-top-right-radius: 16px; 
-  }
+  > .flag {
+   width : 250px;
+   height: 150px;
+ 
+
+    > img {
+      width: 100%;
+      height: 100%;
+      
+      object-fit: cover;
+      
+      border-top-left-radius: 16px; 
+      border-top-right-radius: 16px; 
+    }
+ }
 
   > .description {
     height: 100%;
