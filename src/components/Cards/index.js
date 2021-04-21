@@ -8,11 +8,20 @@ function Cards() {
 
   const [countries, setCountries] = useState([])
   const [search, setSeacrch] = useState('all')
+  
   useEffect(() => {
     api.get(`/${search}`).then((res) => {
       setCountries(res.data);
     })
   }, [])
+
+  function getValue() {
+    let select = document.querySelector('select');
+    let option = select.children[select.selectedIndex];
+    let valueSelect = option.textContent;
+    
+    setSeacrch(valueSelect);
+  }
 
   return (
     <CardContainer>
@@ -22,7 +31,7 @@ function Cards() {
             <input type="text"  placeholder="Search For a country..."/>
           </div>
           <div className="select-regions">
-            <select id="regions">
+            <select id="regions" onChange={() => getValue()}>
               <option value="all" selected>All</option>
               <option value="Africa">Africa</option>
               <option value="America">Ameria</option>
@@ -33,6 +42,7 @@ function Cards() {
           </div>
        </InputContainer>
       <Grid>
+
         {countries.map((item) => {
           return (
 
