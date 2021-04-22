@@ -16,7 +16,14 @@ export const Button = styled.button`
   justify-content: center;
 
   background: var(--dark-blue);
-  box-shadow: 0px 0px black;
+  box-shadow: inset 0 0 1 black;
+
+  color: white;
+
+  border-radius: 8px;
+
+  margin: 40px 0; 
+
 
 `;
 
