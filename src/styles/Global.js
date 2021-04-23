@@ -14,7 +14,7 @@ export default createGlobalStyle`
     width: 100%;
     height: 100%;
 
-    font-size: 14px;
+    font-size: 16px;
 
     background-color: var(--very-dark-blue);
   }
@@ -32,6 +32,6 @@ export default createGlobalStyle`
     // Background lg
     --vr-lg-grayLG:  hsl(0, 0%, 98%);
 
-    --white-dr-lg-text: hsl(0, 0%, 100%);
+    --white: hsl(0, 0%, 100%);
   }
 `;
