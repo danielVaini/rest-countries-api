@@ -4,49 +4,51 @@ export const Container = styled.div`
  width: 100%;
  height: 100%;
 
- display:flex;
- flex-direction: column;
-
- align-items: center;
+ 
 `;
 
-export const ShowCard = styled.div`
+export const Layout = styled.div`
   width: 100%;
-  max-width: 1280px;
-  height: 700px;
 
-  border: 1px solid white;
 
   display: flex;
+  align-items: center;
+  justify-content: space-evenly;
 
-  padding: 24px;
->div {
-
-  > .flag {
-    width: 600px;
+  > .img-container {
+    width: 500px;
     height: 350px;
 
     > img {
       width: 100%;
       height: 100%;
       object-fit: cover;
-
-      
     }
   }
-}
-`;
 
-export const Details = styled.div`
+  > .details {
+    height: 250px;
 
-`;
-export const Text = styled.p`
-  color: white;
-  margin: 0px 0px 40px 48px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    color: var(--white);
+    > h1{
+      font-size: 32px;
+    }
+    
+    > .details-container {
+      width: 400px;
 
-  font-size: 24px;
+      display: flex;
+      justify-content: space-between;
+      >div {
 
-  > span {
-    font-size: 18px
+        > p {
+          margin-bottom: 16px;
+          
+        }
+      }
+    }
   }
 `;
