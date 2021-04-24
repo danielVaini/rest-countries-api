@@ -40,16 +40,19 @@ export const InputContainer = styled.div`
     height: 50px;
 
     > select {
+      outline: none;
       width: 100%;
       height: 100%;
 
       background-color: var(--dark-blue);
-      color: var(--white-dr-lg-text);
+      color: var(--white);
+      font-weight: 700;
 
       padding: 15px 20px;
       
       > option {
-        
+        height: 40px;
+        padding: 10px;
         margin: 46px 0px;
       }
 
@@ -96,15 +99,15 @@ export const Grid = styled.div`
 export const Card = styled.div`
   
   width: 250px;
-  height: 350px;
+  height: 300px;
 
   display: flex;
   
   flex-direction: column;
   
   background-color: var(--dark-blue);
-  border-top-left-radius: 16px; 
-  border-top-right-radius: 16px; 
+  border-top-left-radius: 8px; 
+  border-top-right-radius: 8px; 
 
   > .flag {
    width : 250px;
@@ -117,8 +120,8 @@ export const Card = styled.div`
       
       object-fit: cover;
       
-      border-top-left-radius: 16px; 
-      border-top-right-radius: 16px; 
+      border-top-left-radius: 8px; 
+      border-top-right-radius: 8px; 
     }
  }
 
