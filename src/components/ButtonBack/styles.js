@@ -22,9 +22,18 @@ export const Button = styled.button`
 
   border-radius: 8px;
 
-  margin: 40px 0; 
+  margin: 40px 0 40px 40px; 
 
+  > a {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center;
+  }
 
+  &:hover {
+    cursor: pointer;
+  }
 `;
 
 export const Arrow = styled(IoArrowBack)`
