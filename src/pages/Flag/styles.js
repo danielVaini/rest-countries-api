@@ -50,5 +50,13 @@ export const Layout = styled.div`
         }
       }
     }
+
+    > .borders {
+      display: flex;
+
+      > p:first-child {
+        margin-right: 10px;
+      }
+    }
   }
 `;
