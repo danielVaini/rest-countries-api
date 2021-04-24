@@ -108,7 +108,7 @@ export const Card = styled.div`
 
   > .flag {
    width : 250px;
-   height: 150px;
+   height: 130px;
  
 
     > img {
