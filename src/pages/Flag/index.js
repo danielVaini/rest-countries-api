@@ -6,7 +6,7 @@ import { Container, Layout} from './styles';
 import api from '../../server/api';
 import { useParams } from 'react-router-dom';
 import ButtonBack from '../../components/ButtonBack';
-
+import Borders from '../../components/Borders/index';
 
 function Flag() {
 
@@ -14,7 +14,7 @@ function Flag() {
   const [country, setCountry] = useState([])
 
   const [currencie, setCurrencie] = useState('')
-  const [languages, setLanguages] = useState([])
+  const [languages, setLanguages] = useState('')
   const [borders, setBorders] = useState([]);
  
 
@@ -30,7 +30,7 @@ function Flag() {
        return item.name
      }
      }))
-     setBorders(res.data.borders);
+     setBorders(res.data.borders)
     })
   }, [])
 
@@ -60,7 +60,19 @@ function Flag() {
 
             </div>
           </div>
-          <p><strong>Borders: </strong></p>
+          <div className="borders">
+
+            <p><strong>Borders: </strong></p>
+              {borders.map((item) => {
+                if(item.length <= 0){
+                  return <Borders text="Vazio" />
+                }else{
+                  return <Borders text={item}/>
+
+                }
+              })}
+            
+          </div>
         </div>
       </Layout>
     </Container>
