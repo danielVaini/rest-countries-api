@@ -10,7 +10,7 @@ function Cards() {
   const [search, setSeacrch] = useState('all')
   
   useEffect(() => {
-    api.get(`/${search}`).then((res) => {
+    api.get(`/all`).then((res) => {
       setCountries(res.data);
     })
   }, [])
@@ -21,6 +21,7 @@ function Cards() {
     let valueSelect = option.textContent;
     
     setSeacrch(valueSelect);
+    console.log(search)
   }
 
   return (
@@ -34,7 +35,7 @@ function Cards() {
             <select id="regions" onChange={() => getValue()}>
               <option value="all" selected>All</option>
               <option value="Africa">Africa</option>
-              <option value="America">Ameria</option>
+              <option value="America">America</option>
               <option value="Asia">Asia</option>
               <option value="Europe">Europe</option>
               <option value="Oceania">Oceania</option>
