@@ -7,7 +7,7 @@ import api from '../../server/api';
 function Cards() {
 
   const [countries, setCountries] = useState([])
-  const [search, setSeacrch] = useState('all')
+  const [search, setSeacrch] = useState('')
   
   useEffect(() => {
     api.get(`/all`).then((res) => {
@@ -15,14 +15,7 @@ function Cards() {
     })
   }, [])
 
-  function getValue() {
-    let select = document.querySelector('select');
-    let option = select.children[select.selectedIndex];
-    let valueSelect = option.textContent;
-    
-    setSeacrch(valueSelect);
-    console.log(search)
-  }
+
 
   return (
     <CardContainer>
@@ -32,13 +25,13 @@ function Cards() {
             <input type="text"  placeholder="Search For a country..."/>
           </div>
           <div className="select-regions">
-            <select id="regions" onChange={() => getValue()}>
-              <option value="all" selected>All</option>
-              <option value="Africa">Africa</option>
-              <option value="America">America</option>
-              <option value="Asia">Asia</option>
-              <option value="Europe">Europe</option>
-              <option value="Oceania">Oceania</option>
+            <select id="regions" title="regions">
+              <option value="all" defaultValue >All</option>
+              <option value="Africa" >Africa</option>
+              <option value="America" >America</option>
+              <option value="Asia" >Asia</option>
+              <option value="Europe" >Europe</option>
+              <option value="Oceania" >Oceania</option>
             </select>
           </div>
        </InputContainer>
@@ -46,8 +39,7 @@ function Cards() {
 
         {countries.map((item) => {
           return (
-
-            <Link to={`/flag/${item.alpha2Code}`}>
+            <Link  key={item.name} to={`/flag/${item.alpha2Code}`}>
             <Card>
               <div className="flag">
                 <img src={item.flag} alt="Flag"/>
