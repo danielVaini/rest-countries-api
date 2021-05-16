@@ -14,6 +14,7 @@ export default createGlobalStyle`
     width: 100%;
     height: 100%;
 
+    font-family: Nunito Sans;
     font-size: 16px;
 
     background-color: var(--very-dark-blue);
@@ -33,5 +34,11 @@ export default createGlobalStyle`
     --vr-lg-grayLG:  hsl(0, 0%, 98%);
 
     --white: hsl(0, 0%, 100%);
+  }
+
+  .light-mode {
+    --dark-blue: var(--dark-gray-LG);
+    --very-dark-blue: var(----vr-lg-grayLG);
+    
   }
 `;
