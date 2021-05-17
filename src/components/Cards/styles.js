@@ -99,7 +99,7 @@ export const Grid = styled.div`
 export const Card = styled.div`
   
   width: 250px;
-  height: 300px;
+  height: 320px;
 
   display: flex;
   
@@ -126,6 +126,10 @@ export const Card = styled.div`
  }
 
   > .description {
+
+    > h2 {
+      font-size: 16px;
+    }
     height: 100%;
 
     color: white;
