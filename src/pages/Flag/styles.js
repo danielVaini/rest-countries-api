@@ -35,6 +35,7 @@ export const Layout = styled.div`
     color: var(--white);
     > h1{
       font-size: 32px;
+      margin-bottom: 40px;
     }
     
     > .details-container {
