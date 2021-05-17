@@ -45,6 +45,10 @@ export const MoonIcon = styled(IoMoonSharp)`
   height: 16px;
 `;
 
-export const Text = styled.p`
+export const Text = styled.button`
+  appearance: none;
+  outline: none;
+  background-color: transparent;
+  border: none;
   color: white;
 `;
