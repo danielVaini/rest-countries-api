@@ -12,7 +12,7 @@ export const Navbar = styled.div`
   align-items: center;
   justify-content: center;
 
-  background-color: var(--dark-blue);
+  background-color: var(--menu-dark);
   
 `;
 
@@ -37,7 +37,7 @@ export const Div = styled.div`
 export const H1 = styled.h1`
   font-size: 24px;
 
-  color: white;
+  color: var(--text-dark);
 `;
 
 export const MoonIcon = styled(IoMoonSharp)`
@@ -50,5 +50,5 @@ export const Text = styled.button`
   outline: none;
   background-color: transparent;
   border: none;
-  color: white;
+  color: var(--text-dark);
 `;
