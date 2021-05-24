@@ -15,10 +15,10 @@ export const Button = styled.button`
   align-items: center;
   justify-content: center;
 
-  background: var(--dark-blue);
+  background: var(--card-dark);
   box-shadow: inset 0 0 1 black;
 
-  color: white;
+  color: var(--text-dark);
 
   border-radius: 8px;
 
@@ -26,7 +26,7 @@ export const Button = styled.button`
 
   > a {
     text-decoration: none;
-    color: white;
+    color: var(--text-dark);
     display: flex;
     align-items: center;
   }
