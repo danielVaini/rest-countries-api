@@ -2,8 +2,9 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
  width: 100%;
- height: 100%;
+ height: 100vh;
 
+background-color: var(--bg-dark);
  
 `;
 
@@ -32,7 +33,7 @@ export const Layout = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    color: var(--white);
+    color: var(--text-dark);
     > h1{
       font-size: 32px;
       margin-bottom: 40px;
