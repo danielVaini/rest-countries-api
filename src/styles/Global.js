@@ -12,33 +12,43 @@ export default createGlobalStyle`
     max-width: 100vw;
 
     width: 100%;
-    height: 100%;
+    height: auto;
 
     font-family: Nunito Sans;
     font-size: 16px;
 
-    background-color: var(--very-dark-blue);
+    
   }
+
 
 
   :root {
 
-    // Dark mode
-    --dark-blue: hsl(209, 23%, 22%);
-    --very-dark-blue: hsl(207, 26%, 17%);
+    --menu-ligh: #FFFFFF;
+    --bg-light: #FAFAFA;
+    --card-bg-light: #FFFFFF;
+    --input-light: #FFFFFF;
 
-    // Light mode text
-    --vr-dark-blue-LG: hsl(200, 15%, 8%);
-    --dark-gray-LG: hsl(0, 0%, 52%);
-    // Background lg
-    --vr-lg-grayLG:  hsl(0, 0%, 98%);
 
-    --white: hsl(0, 0%, 100%);
+    --menu-dark: #2B3743;
+    --bg-dark: #202D36;
+    --card-dark: #2B3743;
+    --input-dark: #202D36;
+
+    --text-dark: #FFFFFF;
+    --text-light: #000000;
+
+    --border-dark: #202D36;
+    --border-light: #FEFEFE;
+
   }
 
   .light-mode {
-    --dark-blue: var(--dark-gray-LG);
-    --very-dark-blue: var(----vr-lg-grayLG);
-    
+    --menu-dark: var(--menu-ligh);
+    --bg-dark: var(--bg-light);
+    --card-dark: var(--card-bg-light);
+    --input-dark: var(--input-light);
+    --text-dark: var(--text-light);
+    --border-dark: var(--border-light);
   }
 `;
