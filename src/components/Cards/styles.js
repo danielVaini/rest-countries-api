@@ -31,7 +31,7 @@ export const InputContainer = styled.div`
 
       background-color: var(--dark-blue);
 
-      color: white;
+      color: var(--text-dark);
     }
   }
 
@@ -44,8 +44,8 @@ export const InputContainer = styled.div`
       width: 100%;
       height: 100%;
 
-      background-color: var(--dark-blue);
-      color: var(--white);
+      background-color: var(--card-dark);
+      color: var(--text-dark);
       font-weight: 700;
 
       padding: 15px 20px;
@@ -105,9 +105,11 @@ export const Card = styled.div`
   
   flex-direction: column;
   
-  background-color: var(--dark-blue);
+  background-color: var(--card-dark);
   border-top-left-radius: 8px; 
   border-top-right-radius: 8px; 
+
+  box-shadow: 0 0 8px #2B3743;
 
   > .flag {
    width : 250px;
@@ -132,7 +134,7 @@ export const Card = styled.div`
     }
     height: 100%;
 
-    color: white;
+    color: var(--text-dark);
 
     display: flex;
     flex-direction: column;
