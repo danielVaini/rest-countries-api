@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-import {IoMoonSharp} from '../../styles/Icons';
+import {DarkMoon} from '../../styles/Icons';
 
 export const Navbar = styled.div`
   width: 100%;
@@ -40,15 +40,25 @@ export const H1 = styled.h1`
   color: var(--text-dark);
 `;
 
-export const MoonIcon = styled(IoMoonSharp)`
+export const MoonIcon = styled(DarkMoon)`
   width: 16px;
   height: 16px;
+  margin-right: 16px;
 `;
 
-export const Text = styled.button`
+export const Button = styled.button`
   appearance: none;
   outline: none;
   background-color: transparent;
   border: none;
   color: var(--text-dark);
+
+  display: flex;
+  align-items: center;
+
+  cursor: pointer;
+  font-weight: 500;
+
+
+  
 `;
