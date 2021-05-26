@@ -33,7 +33,7 @@ export default createGlobalStyle`
     --menu-dark: #2B3743;
     --bg-dark: #202D36;
     --card-dark: #2B3743;
-    --input-dark: #202D36;
+    --input-dark: #293846;
 
     --text-dark: #FFFFFF;
     --text-light: #000000;
