@@ -50,6 +50,7 @@ function Cards() {
         <div className="select-regions">
           <select id="regions" onChange={() => selectIndex()}>
             <option value="All" >All</option>
+            <option value="Americas" >Americas</option>
             <option value="Africa" >Africa</option>
             <option value="Asia" >Asia</option>
             <option value="Europe" >Europe</option>
