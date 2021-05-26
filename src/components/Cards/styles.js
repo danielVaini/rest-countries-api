@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import {IoSearchOutline} from '../../styles/Icons';
 
 let windowWidth = window.innerWidth;
+let windowHeight = window.innerHeight;
 
 export const InputContainer = styled.div`
   width: 100%;
@@ -10,7 +11,7 @@ export const InputContainer = styled.div`
   max-width: ${windowWidth - 50 + "px"};
 
   display: flex;
-
+ 
   justify-content: space-between;
 
   margin: 40px 20px 0px;
@@ -27,9 +28,10 @@ export const InputContainer = styled.div`
       width: 400px;
       height: 50px;
 
+     
       padding: 0 60px;
 
-      background-color: var(--dark-blue);
+      background-color: var(--input-dark);
 
       color: var(--text-dark);
     }
@@ -38,6 +40,13 @@ export const InputContainer = styled.div`
   > .select-regions {
     width: 150px;
     height: 50px;
+
+    @media (max-width: 580px) {
+      width: 400px;
+    }
+    @media (max-width: 400px) {
+      width: 300px;
+    }
 
     > select {
       outline: none;
@@ -49,15 +58,33 @@ export const InputContainer = styled.div`
       font-weight: 700;
 
       padding: 15px 20px;
+
+
       
       > option {
         height: 40px;
-        padding: 10px;
+        padding: 20px 10px;
         margin: 46px 0px;
+
       }
 
     }
   }
+  @media (max-width: 580px){
+    flex-direction: column;
+    align-items: center;
+
+    input {
+      margin-bottom: 16px;
+
+    }
+  }
+
+  @media (max-width: 400px){
+        .search {
+          width: 300px;
+        }
+      }
 `;
 
 export const SearchIcon = styled(IoSearchOutline)`
@@ -79,6 +106,7 @@ export const Grid = styled.div`
   grid-template-columns: 1fr 1fr 1fr 1fr;
   
 
+
   grid-column-gap: 0;
   grid-row-gap: 24px;
 
@@ -91,6 +119,21 @@ export const Grid = styled.div`
    width:250px;
  }
 
+
+ @media (max-width: 1100px) {
+    grid-template-columns: 1fr 1fr 1fr;
+
+  }
+  @media (max-width: 800px) {
+    grid-template-columns: 1fr 1fr;
+
+  }
+  @media (max-width: 550px) {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+
+  }
  
   
 `;
@@ -154,6 +197,7 @@ export const Card = styled.div`
 export const CardContainer = styled.div`
   width: 100%;
   height: auto;
+  min-height: 90vh;
   max-width: 1280px;
 
   display: flex;
