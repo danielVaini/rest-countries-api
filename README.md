@@ -1,3 +1,33 @@
+This application has a dark mode and a light mode and, when clicking on the flag of the country, we are taken to a new page with information about this country.
+
+It was built using React and 'Styled-components'
+
+### Dark mode
+![Dark mode](https://user-images.githubusercontent.com/57446226/119588578-7aa8c100-bda7-11eb-83db-dfe947318e0a.png)
+
+
+### Ligh mode
+![Light mode](https://user-images.githubusercontent.com/57446226/119588627-9744f900-bda7-11eb-8c8a-1d7207d1bda6.png)
+
+
+### Country flag page
+![image](https://user-images.githubusercontent.com/57446226/119588704-c0658980-bda7-11eb-814b-604bf85b9664.png)
+
+![image](https://user-images.githubusercontent.com/57446226/119588725-c8bdc480-bda7-11eb-9e8f-ac45f0e10811.png)
+
+
+## Mobile
+
+![image](https://user-images.githubusercontent.com/57446226/119588864-0fabba00-bda8-11eb-86fa-494157e03917.png)
+
+![image](https://user-images.githubusercontent.com/57446226/119588886-19cdb880-bda8-11eb-8fa7-8d17c4820d90.png)
+
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
