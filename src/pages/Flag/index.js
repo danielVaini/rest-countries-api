@@ -63,14 +63,17 @@ function Flag() {
           <div className="borders">
 
             <p><strong>Borders: </strong></p>
+            <div className="borders-container">
+
               {borders.map((item) => {
                 if(item.lenght <= 0){
                   return <Borders text="Vazio" />
                 }else{
                   return <Borders text={item}/>
-
+                  
                 }
               })}
+            </div>
             
           </div>
         </div>
