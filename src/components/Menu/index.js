@@ -1,5 +1,5 @@
 import React from 'react';
-import { Navbar, NavContainer, H1, Div } from './styles';
+import { Navbar, NavContainer, H1, Div, MoonIcon, Button } from './styles';
 
 
 
@@ -23,9 +23,10 @@ function Menu() {
         <NavContainer>
           <H1>Where in the world?</H1>
           <Div>
-            <button className="dark-mod" onClick={() => classAdd()}>
+            <Button className="dark-mod" onClick={() => classAdd()}>
+              <MoonIcon />
               Dark Mode
-            </button>
+            </Button>
           </Div>
         </NavContainer>
       </Navbar>
